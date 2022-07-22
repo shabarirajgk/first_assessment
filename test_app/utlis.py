@@ -1,0 +1,4 @@
+
+
+# course
+COURSE_SOFT_DELETED = 0

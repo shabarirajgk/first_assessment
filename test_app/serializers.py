@@ -6,7 +6,7 @@ from .models import Course, Module
 class CourseSerializer(ModelSerializer):
     class Meta:
         model = Course
-        fields = ['id', 'name', 'slug', 'description', 'image', 'status', 'created_at']
+        fields = ['id', 'name', 'slug', 'description', 'image', 'status']
         # dynamically modifying fields
 
 
@@ -23,5 +23,5 @@ class ModuleSerializer(ModelSerializer):
 
     class Meta:
         model = Module
-        fields = ['id', 'name', 'course_id', 'parent_id', 'create_course']
+        fields = ['id', 'name', 'course_id', 'parent_id', 'create_course', 'description', 'position']
         # dynamically modifying fields
